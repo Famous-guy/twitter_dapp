@@ -1,0 +1,162 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f8fa;
+  color: #14171a;
+  padding: 20px;
+}
+
+.connect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#userAddress {
+  text-transform: uppercase;
+  color: #1da1f2;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border-left-color: #09f;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  color: #1da1f2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#connectWalletBtn {
+  background-color: #1da1f2;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#userAddress {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+
+#connectMessage {
+  display: none;
+  margin: 10px 0;
+  font-size: 14px;
+  color: #65676b;
+}
+
+button[type="submit"] {
+  background-color: #1da1f2;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.tweet {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.author {
+  font-weight: bold;
+  color: #1da1f2;
+}
+
+.like-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #1da1f2; /* Twitter's brand color */
+  font-size: 1.2em;
+  transition: all 0.3s ease;
+}
+
+.like-button:hover {
+  color: #e0245e; /* color change on hover like in Twitter */
+}
+
+.like-button:active {
+  transform: scale(1.1); /* scale up a bit when clicked */
+}
+
+.like-button .fas,
+.like-button .far {
+  font-size: 20px;
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+}
+
+.likes-count {
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.like-button .likes-count {
+  margin-left: 5px;
+}
+
+.user-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.tweet {
+  display: flex;
+  align-items: start;
+  margin-bottom: 20px;
+}
+
+.author,
+.content {
+  flex-grow: 1;
+}
+
+.tweet-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
